@@ -1,0 +1,169 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Ignacio Doe",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb093da7d92733c001c0_Ignacio%20Villafruela%20Rodr%C3%ADguez.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Jane Bennett",
+      "image": "https://global-uploads.webflow.com/5eecfecbe625d195e35b89f2/624bfb401d7131c760ca1c63_Elieska%20Lensink.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Rens",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 4,
+      "name": "Jane Bennet",
+      "image": "https://via.placeholder.com/150"
+    },
+    {
+      "id": 5,
+      "name": "Pieter Post",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 6,
+      "name": "Lawrence",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 7,
+      "name": "Pietje puk",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 8,
+      "name": "leo",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 9,
+      "name": "Laurens",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 10,
+      "name": "Tommy",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 11,
+      "name": "Bert",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 12,
+      "name": "Edward",
+      "image": "https://cdn.pixabay.com/photo/2017/07/18/23/40/group-2517459_1280.png"
+    },
+    {
+      "id": 13,
+      "name": "Lola",
+      "image": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+    }
+  ],
+  "events": [
+    {
+      "title": "Trampoline party",
+      "description": "Bounce around with your friends",
+      "image": "https://i.pinimg.com/736x/3d/2f/af/3d2faf4e3188d34a9fcdc00df59e77b0.jpg",
+      "location": "My back yard",
+      "startTime": "2023-03-10T18:00",
+      "endTime": "2023-03-10T18:30",
+      "category": 2,
+      "createdBy": "",
+      "userImage": "",
+      "categoryIds": [
+        2
+      ],
+      "id": 1
+    },
+    {
+      "title": "Badminton game",
+      "description": "Hit that shuttle!",
+      "image": "https://wincacademy.github.io/webpages/media/pexels-vladvictoria-2202685.jpg",
+      "location": "The Park",
+      "startTime": "2025-01-25T13:00",
+      "endTime": "2025-01-25T14:00",
+      "category": "1",
+      "createdBy": "",
+      "categoryIds": [
+        1
+      ],
+      "id": 3
+    },
+    {
+      "id": 4,
+      "createdBy": 2,
+      "title": "Yoga",
+      "description": "It's a bit of a stretch.",
+      "image": "https://wincacademy.github.io/webpages/media/pexels-gabby-k-5384538.jpg",
+      "categoryIds": [
+        3
+      ],
+      "location": "Shavasana Yoga School",
+      "startTime": "2023-03-09T06:00:00.000Z",
+      "endTime": "2023-03-09T07:00:00.000Z"
+    },
+    {
+      "title": "Nerf war tournament",
+      "description": "bring your own nerfs or use ours.",
+      "image": "https://media.istockphoto.com/id/1454268925/photo/happy-friends-having-playful-nerf-gun-battle-at-birthday-party.jpg?s=612x612&w=0&k=20&c=Eumy6OT_qobYqpv8OaV66RNrBUPN2-3qfmpcSsDHRYs=",
+      "location": "Park",
+      "startTime": "2025-01-30T13:00",
+      "endTime": "2025-01-30T16:00",
+      "category": "2",
+      "createdBy": 11,
+      "categoryIds": [
+        2
+      ],
+      "id": 7
+    },
+    {
+      "createdBy": 12,
+      "title": "Pool party",
+      "description": "Lets grab some drinks and cool down in the local pool",
+      "image": "https://media.istockphoto.com/id/1174882601/photo/enjoying-pool-party-with-friends.jpg?s=612x612&w=0&k=20&c=_HSjmaVpaaRUD8pDKS0BF2hMnWewcp9QKVvEi4W8hxc=",
+      "location": "Local pool",
+      "startTime": "2025-01-30T14:00",
+      "endTime": "2025-01-30T18:00",
+      "categoryIds": [
+        3
+      ],
+      "id": 8
+    },
+    {
+      "title": "Dart tournament",
+      "description": "let's throw some darts and hit that bullseye!",
+      "image": "https://media.istockphoto.com/id/529249593/photo/three-darts-in-bulls-eye-close-up.jpg?s=612x612&w=0&k=20&c=DchfJtGbHQ9zPe0hfkvf8UVxIJZh-hd9TgNp0-SuZgo=",
+      "location": "Dart centre",
+      "startTime": "2025-01-31T19:30",
+      "endTime": "2025-01-31T23:00",
+      "category": 1,
+      "createdBy": 13,
+      "userImage": "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "categoryIds": [
+        1
+      ],
+      "id": 9
+    }
+  ],
+  "categories": [
+    {
+      "name": "sports",
+      "id": 1
+    },
+    {
+      "name": "games",
+      "id": 2
+    },
+    {
+      "name": "relaxation",
+      "id": 3
+    }
+  ]
+}

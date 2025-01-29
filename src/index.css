@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary: #1dd3b0;
+  --secondary: #0e84ce;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--primary);
+  padding: 20px;
+}
+
+button {
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+button:hover {
+  background: green;
+}
+
+/* Navbar */
+header nav {
+  display: flex;
+  gap: 16px;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header nav h1 {
+  margin-right: auto;
+  border-bottom: 3px solid var(--secondary);
+  font-size: xx-large;
+}
+
+header nav a {
+  text-decoration: none;
+  gap: 10px;
+  padding: 6px;
+  border-radius: 4px;
+}
+
+header nav a.active {
+  background: var(--secondary);
+}
+
+/* Page content */
+main {
+  max-width: 1200px;
+  margin: 40px auto;
+}
+
+/* Home / EventList */
+.eventlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  justify-content: center;
+}
+
+.eventlist > a {
+  display: block;
+  background: #04af8d6e;
+  padding: 15px;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 5px 5px 15px 5px #747474cb;
+  overflow: hidden;
+}
+
+.eventlist > a:hover p {
+  color: var(--secondary);
+}
+
+.eventlist p {
+  margin: 0;
+  font-weight: lighter;
+  color: rgb(20, 23, 26);
+}
+
+.eventlist img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Filters */
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.filters input,
+.filters select {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Responsive Filters */
+@media (min-width: 650px) {
+  .filters {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .filters input,
+  .filters select {
+    max-width: 300px;
+  }
+}
+
+/* DetailedEvent */
+.event-details {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.event-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.user-image {
+  max-width: 30%;
+  margin: 10px;
+}
+
+.detail-button {
+  border: 0;
+  margin-right: 5px;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  background: var(--secondary);
+  cursor: pointer;
+}
+
+.detail-button:hover {
+  background: green;
+}
+
+.event-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.delete-button {
+  background-color: red;
+  color: white;
+}
+
+.confirmation-dialog {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.confirmation-buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: green;
+  color: white;
+}
+
+.cancel-button {
+  background-color: red;
+  color: white;
+}
+
+.delete-message {
+  background-color: lightgreen;
+  color: darkgreen;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* AddEvent / EditEvent */
+.add-event {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.add-event h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.event-form label {
+  font-weight: bold;
+}
+
+.event-form input,
+.event-form textarea,
+.event-form select,
+.event-form button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.event-form button {
+  background: var(--secondary);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.event-form button:hover {
+  background: green;
+}
+
+.success-message {
+  background: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 400px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header nav h1 {
+    margin-bottom: 10px;
+  }
+
+  header nav a {
+    margin-bottom: 10px;
+  }
+
+  .eventlist > a {
+    width: 100%;
+  }
+}
+
+@media (min-width: 900px) {
+  .eventlist {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .add-event {
+    padding: 15px;
+    margin: 10px;
+  }
+
+  .event-form {
+    gap: 12px;
+  }
+
+  .event-form input,
+  .event-form select,
+  .event-form textarea {
+    font-size: 14px;
+  }
+
+  .event-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .add-event {
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .event-form {
+    gap: 10px;
+  }
+
+  .event-form input,
+  .event-form select,
+  .event-form textarea {
+    font-size: 12px;
+  }
+
+  .event-form button {
+    font-size: 12px;
+  }
+}
